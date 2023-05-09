@@ -25,6 +25,44 @@
       opacity: 0.6;
     }
 
+    .card {
+      margin-top: 100px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px #ccc;
+    }
+
+    .card-body {
+      padding: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-control {
+      border-radius: 20px;
+      background-color: #f2f2f2;
+      border: none;
+    }
+
+    .btn-primary {
+      border-radius: 20px;
+      background-color: #6c63ff;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #524ee4;
+    }
+
+    h2 {
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+    }
+
     
   </style>
   </head>
@@ -34,9 +72,10 @@
       <div class="row justify-content-center">
         <div class="col-md-6">
           <div class="card" style = " margin-top: 20px;">
-            <div class="text-center">
-            <img src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" style="height: 220px; border-radius: 50%;">
-            </div>
+             <div class="text-center">
+             <h2>Log In</h2>
+             </div>
+            
             <div class="card-body">
               <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
                 <div class="form-group">
